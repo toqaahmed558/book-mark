@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+#main {
+    background-color: #fec260;
+    color: #352e28;
+    width: 100%;
+    min-height: 100vh; 
+    padding: 0 15px;
+}
+
+#mainTitle {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    background: linear-gradient(to right, #4baa67, #d8cc4a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#middle {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+    width: 100%;
+    max-width: 600px; 
+    margin: 20px auto; 
+}
+
+#middleMainTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#middleMainTitle h2 {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-family: "Righteous", cursive;
+    font-size: 30px;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    max-width: 200px; 
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4baa67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; 
+}
+
+button:hover {
+    background-color: #3a924e;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #347c45;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px; 
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: black;
+}
+
+table thead tr td {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: #4baa67;
+    color: #fff;
+}
+
+table tbody tr td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 576px) {
+    #mainTitle {
+        font-size: 28px; 
+    }
+
+    #middleMainTitle h2 {
+        font-size: 20px; 
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 8px; 
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    table thead tr td, table tbody tr td {
+        font-size: 12px; 
+        padding: 8px;
+    }
+}

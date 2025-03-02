@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Marker</title>
+</head>
+<body class="text-white">
+    <div id="main" class="container-fluid">
+        <div class="container">
+            <div  class="text-center ">
+                <h1 id="mainTitle">Bookmarker</h1>
+            </div>
+         <div id="middle" class=" pt-2">
+            <div id="middleMainTitle">
+                <h2 > Bookmark your favorite sites</h2>
+            </div>
+            <div class="form-group py-1">
+                <label for="siteNameInput">Site Name :</label>
+                <input id="siteNameInput" class="form-control" placeholder="Site Name...." type="text">
+            </div>
+            <div class="form-group py-1">
+                <label for="siteurlInput">Site Url :</label>
+                <input id="siteurlInput" class="form-control" placeholder="Site Url...." type="text">
+            </div>
+            <div class="mt-5 w-50 mx-auto text-center">
+                <button id="addUpdateBtn" onclick="addUpdatesite()" class="btn btn-outline-success mx-auto">Add site</button>
+            </div>
+         </div>
+         <input onkeyup="displaysite()" id="searchInput" class="form-control mt-5 w-50 mx-auto" placeholder="Search...." type="text">
+         <div class="mt-4">
+            <table class="table" style="color: black; --bs-table-bg: rgb (33, 37, 41) ; --bs-table-color-state :fff">
+                <thead>
+                    <tr>
+                        <td>index</td>
+                        <td>Site Name</td>
+                        <td>Site Url</td>
+                        <td>update</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="TableBody">
+        
+                </tbody>
+            </table>
+         </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
